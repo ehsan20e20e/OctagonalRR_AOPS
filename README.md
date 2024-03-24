@@ -1,5 +1,5 @@
 # OctagonalRR_AOPS
-Animation Abstract:
+Animation Abstract (loading ... please wait):
 ![OctagonalRR_AOPS](https://github.com/ehsan20e20e/OctagonalRR_AOPS/assets/106914575/b9c99de9-ac16-4a7f-b097-ac28f21b2a8f)
 
 ## Describtion
