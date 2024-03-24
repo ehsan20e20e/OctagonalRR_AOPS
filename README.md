@@ -41,15 +41,15 @@ The proposed plasmonic switch structure's raw data is available in CSV files. Th
 ===> Please be advised that there was an error in the input data related to the Drop port. The data was mistakenly entered as negative, which has been rectified in the written code. To ensure the accuracy of the data, we have applied the absolute value function to the input data. We apologize for any inconvenience this may have caused and assure you that we have taken the necessary measures to prevent such errors in the future.
 
 ### Forward_model
-To train the forward model, utilizing the Python code provided in the 'OctagonalRR_AOPS_Forward_model.py' file is recommended. To this end, we have generated 147,456 unique examples through FDTD simulations and saved them in the "result_V.csv" file (Please take note of the following information: 18432 out of the total number of examples is sufficient.). As a prerequisite for executing the 'OctagonalRR_AOPS_Forward_model.py' file, it is essential to obtain the 'result_H.csv' file which constitutes a big data file with a size of 5.7 gigabytes. By following these steps, you can effectively train the forward model and achieve accurate results.
+To train the forward model, utilizing the Python code provided in the 'OctagonalRR_AOPS_Forward_model.py' file is recommended. To this end, we have generated 147,456 unique examples through FDTD simulations and saved them in the "OctagonalRR_AOPS_V.csv" file (Please take note of the following information: 18432 out of the total number of examples is sufficient.). As a prerequisite for executing the 'OctagonalRR_AOPS_Forward_model.py' file, it is essential to obtain the 'OctagonalRR_AOPS_H.csv' file which constitutes a big data file with a size of 5.7 gigabytes. By following these steps, you can effectively train the forward model and achieve accurate results.
 
-The 'result_V.csv' file can be accessed as a single file through the following link: 
-https://github.com/ehsan20e20e/OctagonalRR_AOPS/releases/download/untagged-54db6d6bee08573b3623/result_V.rar
+The 'OctagonalRR_AOPS_V.csv' file can be accessed as a single file through the following link: 
+https://github.com/ehsan20e20e/OctagonalRR_AOPS/releases/download/untagged-54db6d6bee08573b3623/OctagonalRR_AOPS_V.rar
 
 #### Figure_4
 Upon completing the training process, Figure 4a will display the loss values. Such values are crucial in determining the efficiency of the training process and assessing the system's overall performance under evaluation. It is worth noting that Figure 4a provides useful insights into the system's optimization trajectory, which can help inform future improvements.
 
-To obtain Figures 4b and 4c, it is necessary to instruct the trained model to predict the output spectra for unseen geometric parameters, at wavelengths ranging from 1000 to 1800 nm. This requires predicting the transmission spectra for 800 wavelengths to form the complete spectrum. Once this is done, it is necessary to compare the predicted spectrum with the spectrum obtained using the FDTD method. Searching for the nearest data points to the selected geometric parameters in the "result_V.csv" file is necessary to identify the closest data.
+To obtain Figures 4b and 4c, it is necessary to instruct the trained model to predict the output spectra for unseen geometric parameters, at wavelengths ranging from 1000 to 1800 nm. This requires predicting the transmission spectra for 800 wavelengths to form the complete spectrum. Once this is done, it is necessary to compare the predicted spectrum with the spectrum obtained using the FDTD method. Searching for the nearest data points to the selected geometric parameters in the "OctagonalRR_AOPS_V.csv" file is necessary to identify the closest data.
 
 To facilitate the replication of Figure 4b,c, we have retained the obtained data for your convenience. As such, the file "OctagonalRR_AOPS_Fig_04bc.py" may be used to test or apply the forward model. The relevant data for running this file is stored in the files
  "OctagonalRR_AOPS_Fig_03bc_Lower_sample.csv",
@@ -59,12 +59,12 @@ To facilitate the replication of Figure 4b,c, we have retained the obtained data
  and "OctagonalRR_AOPS_forward_model_weights.h5", all of which have been included here.
 
 ### Inverse_model
-To facilitate the training of the inverse model, we recommend utilizing the Python source code provided in the 'OctagonalRR_AOPS_Inverse_model.py' file. We have meticulously curated 147,456 distinct examples derived from FDTD simulations and have saved them in the "result_H.csv" file, which can be accessed through the following links:
-https://github.com/ehsan20e20e/OctagonalRR_AOPS/releases/download/untagged-54db6d6bee08573b3623/result_H.rar
+To facilitate the training of the inverse model, we recommend utilizing the Python source code provided in the 'OctagonalRR_AOPS_Inverse_model.py' file. We have meticulously curated 147,456 distinct examples derived from FDTD simulations and have saved them in the "OctagonalRR_AOPS_H.csv" file, which can be accessed through the following links:
+https://github.com/ehsan20e20e/OctagonalRR_AOPS/releases/download/untagged-54db6d6bee08573b3623/OctagonalRR_AOPS_H.rar
 
 The aforementioned instances may be employed to train the inverse model, while the provided Python code can be utilized to simplify the process. By capitalizing on these resources, you can significantly improve the efficiency and precision of your model training.
 
-To execute the 'OctagonalRR_AOPS_Inverse_model.py' file, you need the 'result_H.csv' file. This file contains a significant amount of data, with a size of 1.6 gigabytes. Please ensure you have this file available before executing the aforementioned file.
+To execute the 'OctagonalRR_AOPS_Inverse_model.py' file, you need the 'OctagonalRR_AOPS_H.csv' file. This file contains a significant amount of data, with a size of 1.6 gigabytes. Please ensure you have this file available before executing the aforementioned file.
 
 #### Figure_7
 Upon completing the training process, the loss values will culminate in the generation of Figure 7a.
@@ -80,7 +80,7 @@ As part of step 2 (transmission spectra), we have taken measures to facilitate t
 
 
 #### Figure_S4
-To generate Figure S4, please refer to the file "OctagonalRR_AOPS_Fig_S04.py." The necessary data for running this file is stored in the file "result_V.csv," which can be downloaded at the following link:
+To generate Figure S4, please refer to the file "OctagonalRR_AOPS_Fig_S04.py." The necessary data for running this file is stored in the file "OctagonalRR_AOPS_V.csv," which can be downloaded at the following link:
 https://github.com/ehsan20e20e/OctagonalRR_AOPS/releases.
 
 #### Figure_S5
