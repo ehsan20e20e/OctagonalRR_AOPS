@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd 
 from matplotlib.font_manager import FontProperties
 
-Loss = pd.read_csv("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/OctagonalRR_AOPS_S2_Fig_S06.csv")
+Loss = pd.read_csv("OctagonalRR_AOPS_Fig_S06.csv")
 Loss=Loss.to_numpy()
 
 # fig S6m
@@ -23,7 +23,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6m.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6m.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6k
@@ -36,7 +36,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6k.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6k.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6i
@@ -49,7 +49,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6i.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6i.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6g
@@ -62,7 +62,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6g.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6g.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6e
@@ -75,7 +75,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6e.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6e.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6c
@@ -88,7 +88,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6c.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6c.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6a
@@ -101,7 +101,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6a.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6a.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6n
@@ -114,7 +114,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6n.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6n.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6l
@@ -127,7 +127,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6l.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6l.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6j
@@ -140,7 +140,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6j.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6j.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig Sh
@@ -153,7 +153,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6h.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6h.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6f
@@ -166,7 +166,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6f.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6f.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6d
@@ -179,7 +179,7 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6d.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6d.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
 
 # fig S6b
@@ -192,5 +192,5 @@ plt.xticks(fontfamily='Times New Roman', fontsize=16)
 plt.yticks(fontfamily='Times New Roman', fontsize=16)
 font_prop = FontProperties(family="Times New Roman", size=16)
 plt.legend(['FDTD', 'DL'], prop=font_prop)
-plt.savefig("E:/Education/Electronic/01-PHD/github/OctagonalRR_AOPS/P3_FigureS6b.png", format="png", dpi=600, bbox_inches="tight")
+plt.savefig("OctagonalRR_AOPS/P3_FigureS6b.png", format="png", dpi=600, bbox_inches="tight")
 plt.show()
