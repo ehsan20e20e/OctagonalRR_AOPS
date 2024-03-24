@@ -1,0 +1,124 @@
+#The code for the research presented in the paper titled "Inverse design of plasmon-based nonlinear octagonal resonators enabled by deep neural networks."
+#This script file is used to create the structure of AOPS in the FDTD solver.
+#Please cite the paper in any publication using this code.
+deleteall;
+###define parameter
+W_input=%W_input%;
+W_output=%W_output%;
+W_ring=%W_ring%;
+G_input=%G_input%;
+G_output=%G_output%;
+###Defining of base metal  
+addrect;
+set("name","base");
+set("x",0);
+set("y",100*1e-9);
+set("z",0);
+set("x span",2000*1e-9);
+set("y span",1800*1e-9);
+set("z span",600*1e-9);
+set("material",material_base);
+set("override mesh order from material database",1);
+set("mesh order",4); 
+
+###Defining of input Waveguide  
+x_input=0;
+y_input=542.5*1e-9;
+addrect;
+set("name","input");
+set("x",x_input);
+set("y",y_input);
+set("z",0);
+set("x span",2200*1e-9);
+set("y span",W_input);
+set("z span",600*1e-9);
+set("material",%material_WG%);
+set("override mesh order from material database",1);
+set("mesh order",3);
+  
+###Defining of output Waveguide
+x_output=342.5*1e-9; 
+y_output=-195*1e-9-G_input-W_input/2;
+addrect;
+set("name","output");
+set("x",x_output);
+set("y",y_output);
+set("z",0);
+set("x span",W_output);
+set("y span",1410*1e-9);
+set("z span",600*1e-9);
+set("material",%material_WG%);
+set("override mesh order from material database",1);
+set("mesh order",3);
+
+###Defining of large octagonal
+R_octa1=280*1e-9; 
+R_octa2=R_octa1+W_ring; 
+a=(2*R_octa2)/(2+sqrt(2));
+b=a*sqrt(2); #side of octagonal
+x_octa2=x_output-(W_output/2)-(G_output)-(R_octa2);
+y_octa2=y_input-(W_input/2)-(G_input)-(R_octa2);
+xp1=x_octa2-b/2;
+yp1=y_octa2-R_octa2;
+xp2=x_octa2+b/2;
+yp2=y_octa2-a-b/2;
+xp3=x_octa2+a+b/2;
+yp3=y_octa2-b/2;
+xp4=x_octa2+a+b/2;
+yp4=y_octa2+b/2;
+xp5=x_octa2+b/2;
+yp5=y_octa2+a+b/2;
+xp6=x_octa2-b/2;
+yp6=y_octa2+a+b/2;
+xp7=x_octa2-a-b/2;
+yp7=y_octa2+b/2;
+xp8=x_octa2-a-b/2;
+yp8=y_octa2-b/2;
+addpoly;
+set("name","octagonal2");
+#set("x",x_octa2);
+#set("y",y_octa2);
+set("z",0);
+vtx2 = [xp1,yp1;xp2,yp2;xp3,yp3;xp4,yp4;xp5,yp5;xp6,yp6;xp7,yp7;xp8,yp8];
+#?y_octa2;
+#?y_input;
+#?yp5;
+set("vertices",vtx2);
+set("z span",600*1e-9);
+set("material",%material_WG%);
+set("override mesh order from material database",1);
+set("mesh order",3);
+
+###Defining of small octagonal
+R_octa1=280*1e-9;
+a=(2*R_octa1)/(2+sqrt(2));
+b=a*sqrt(2); #side of octagonal
+x_octa1=x_output-(W_output/2)-(G_output)-W_ring-(R_octa1);
+y_octa1=y_input-(W_input/2)-(G_input)-W_ring-(R_octa1);
+xp1=x_octa2-b/2;
+yp1=y_octa2-a-b/2;
+xp2=x_octa2+b/2;
+yp2=y_octa2-a-b/2;
+xp3=x_octa2+a+b/2;
+yp3=y_octa2-b/2;
+xp4=x_octa2+a+b/2;
+yp4=y_octa2+b/2;
+xp5=x_octa2+b/2;
+yp5=y_octa2+a+b/2;
+xp6=x_octa2-b/2;
+yp6=y_octa2+a+b/2;
+xp7=x_octa2-a-b/2;
+yp7=y_octa2+b/2;
+xp8=x_octa2-a-b/2;
+yp8=y_octa2-b/2;
+addpoly;
+set("name","octagonal1");
+#set("x",x_octa2);
+#set("y",y_octa2);
+set("z",0);
+vtx1 = [xp1,yp1;xp2,yp2;xp3,yp3;xp4,yp4;xp5,yp5;xp6,yp6;xp7,yp7;xp8,yp8];
+set("vertices",vtx1);
+set("z span",600*1e-9);
+set("material",%material_base%);
+set("override mesh order from material database",1);
+#set("mesh order",2);
