@@ -3,7 +3,7 @@ Animated Abstract (loading ... please wait):
 ![OctagonalRR_AOPS](https://github.com/user-attachments/assets/0c41bcbd-18e8-4298-bdec-7553e3d7598c)
 
 ## Describtion
-The provided repository serves as a demonstration of the application of deep learning techniques in the prediction of the spectral response of all-optical plasmonic switches. This repository is based on the extensive research presented in the paper titled "**Inverse Design of Octagonal Plasmonic Structure for Switching Using Deep Learning**." The manuscript is due for peer review in the scientific journal in 2024. It has been designed to address inverse design challenges, with a specific focus on the fields of photonics and optics.
+The provided repository serves as a demonstration of the application of deep learning techniques in the prediction of the spectral response of all-optical plasmonic switches. This repository is based on the extensive research presented in the paper titled "**Inverse Design of Octagonal Plasmonic Structure for Switching Using Deep Learning**." The manuscript is due for peer review in a scientific journal in 2024. It has been designed to address inverse design challenges, with a specific focus on the fields of photonics and optics.
 
 #### Table of contents
 * [Prerequisites](#Prerequisites)
